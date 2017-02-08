@@ -27,7 +27,7 @@ body{
 
 h1{
   font-family: 'CooperHewittBoldItalic', 'Helvetica', sans-serif;
-  color: white;
+  color: #464646;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
@@ -55,12 +55,12 @@ span{
 }
 
 span:after {
-  border-top: 8px solid white;
+  border-top: 8px solid #464646;
   position: absolute;
   content: "";
   right: 0;
   top: 30%;
-  left: 0;
+  left: 0;  
 }
 
 button{
@@ -80,11 +80,11 @@ button:focus {
 }
 
 #panel{
-  background-color: #FFD002;
+  background-color: rgba(255, 208, 2, 0.69);
   position: absolute;
   right: 0px;
   height: 100%;
-  max-width: 280px;
+  max-width: 300px;
 }
 
 #map{

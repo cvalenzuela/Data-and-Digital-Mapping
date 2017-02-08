@@ -9,7 +9,7 @@ cvalenzuelab@nyu.edu
 //=====================
 // Variables
 //====================
-var animatioBtn = null, markerBtn = null, showAllBtn = null, erase = null, path = null, latlngs = null, len = route.length, animatedMarker = null, data = null;
+var animatioBtn = null, markerBtn = null, showAllBtn = null, erase = null, path = null,latlngs = null, len = route.length, animatedMarker = null, data = null;
 
 //=====================
 // When DOM ready
@@ -109,7 +109,7 @@ let animate = () => {
     snakingSpeed: 80,
     snakingPause: 0,
     color: '#FFD002',
-    opacity: 0.5,
+    opacity: 0.7,
     weight: 6
   });
 
