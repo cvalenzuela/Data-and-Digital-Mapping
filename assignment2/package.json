@@ -1,0 +1,18 @@
+{
+  "name": "(assignment2)",
+  "version": "1.0.0",
+  "description": "This map visualize all my movements being track for 13 days.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/babel src/js/script.js -d bundle"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/geojson-coords": "0.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8"
+  }
+}

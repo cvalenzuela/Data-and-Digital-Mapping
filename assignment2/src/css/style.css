@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'CooperHewittBookBold';
+    src: url('../fonts/CooperHewitt-WebFonts-public/CooperHewitt-Bold.woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'CooperHewittBoldItalic';
+    src: url('../fonts/CooperHewitt-WebFonts-public/CooperHewitt-BoldItalic.woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'CooperHewittThin';
+    src: url('../fonts/CooperHewitt-WebFonts-public/CooperHewitt-Thin.woff');
+    font-weight: bold;
+}
+
+div{
+  margin: 0;
+}
+
+body{
+  font-family: 'CooperHewittBook', 'Helvetica', sans-serif;
+  overflow: hidden;;
+}
+
+h1{
+  font-family: 'CooperHewittBoldItalic', 'Helvetica', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 7.4vh;
+  padding: 5px;
+  margin: 5px 0 0 0;
+}
+
+p{
+  font-family: 'CooperHewittBook', 'Helvetica', sans-serif;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  font-size: 11px;
+  padding: 0 50px;
+  color: #5d5d5d;
+}
+a{
+  color: #5d5d5d;
+}
+
+span{
+  position: relative;
+  white-space: nowrap;
+}
+
+span:after {
+  border-top: 8px solid white;
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 30%;
+  left: 0;
+}
+
+button{
+  font-family: 'CooperHewittBoldItalic', 'Helvetica', sans-serif;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  color: #676767;
+  border: none;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:focus {
+    outline: 5px solid #676767;
+}
+
+#panel{
+  background-color: #FFD002;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  max-width: 280px;
+}
+
+#map{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+}
+
+#buttons{
+  text-align: center;
+}
