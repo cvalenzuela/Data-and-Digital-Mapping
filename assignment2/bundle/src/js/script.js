@@ -62,7 +62,7 @@ var showAll = function showAll() {
   // Clean everything
   eraseAll();
 
-  data = new L.GeoJSON.AJAX("../../data/full/activities.geojson", {
+  data = new L.GeoJSON.AJAX("https://github.com/cvalenzuela/Data-and-Digital-Mapping/blob/master/assignment2/data/full/activities.geojson", {
     color: '#FFD002',
     opacity: 0.5,
     weight: 6
