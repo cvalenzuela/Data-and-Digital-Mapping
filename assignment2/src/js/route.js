@@ -1,4 +1,4 @@
-var route = [
+export const route = [
  [
   -73.97903,
   40.742011

@@ -4,15 +4,22 @@
   "description": "This map visualize all my movements being track for 13 days.",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/babel src/js/script.js -d bundle"
+    "webpack": "webpack",
+    "build": "NODE_ENV=production webpack",
+    "babel": "./node_modules/.bin/babel --presets es2015 src/js/script.jss -o build/bundle.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mapbox/geojson-coords": "0.0.0"
+    "@mapbox/geojson-coords": "0.0.0",
+    "mapbox.js": "^3.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
-    "babel-preset-env": "^1.1.8"
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-es2015": "^6.22.0",
+    "webpack": "^2.2.1"
   }
 }
