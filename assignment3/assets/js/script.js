@@ -19,7 +19,7 @@ var SAT_Math_AvgScore = L.geoJson(null, {
     })
   },
   onEachFeature(feature, layer){
-    layer.bindPopup("<strong>Average Math</strong>:" + "</br>" + String(feature.properties.SAT_Math_AvgScore))
+    layer.bindPopup("<h4>" + feature.properties.school_name  + "</h4>" + "<strong>Average Math</strong>:" + "</br>" + feature.properties.SAT_Math_AvgScore + "</br>" + "<strong>Number of Test Takers</strong>:" + "</br>" + feature.properties.Num_of_SAT_Test_Takers)
   }
 });
 
@@ -33,7 +33,7 @@ var SAT_Critical_Reading_AvgScore = L.geoJson(null, {
     })
   },
   onEachFeature(feature, layer){
-    layer.bindPopup("<strong>Average Critical Reading</strong>:" + "</br>" + String(feature.properties.SAT_Math_AvgScore))
+    layer.bindPopup("<h4>" + feature.properties.school_name  + "</h4>" + "<strong>Average Critical Reading</strong>:" + "</br>" + feature.properties.SAT_Critical_Reading_AvgScore + "</br>" + "<strong>Number of Test Takers</strong>:" + "</br>" + feature.properties.Num_of_SAT_Test_Takers)
   }
 });
 
@@ -41,13 +41,13 @@ var SAT_Writing_AvgScore = L.geoJson(null, {
   pointToLayer: function(feature, latlng){
     return new L.CircleMarker(latlng, {
       radius: getRadius(feature.properties.Num_of_SAT_Test_Takers, 6, 1277, 4, 25),
-      color: getColor(feature.properties.SAT_Critical_Reading_AvgScore),
+      color: getColor(feature.properties.SAT_Writing_AvgScore),
       stroke: false,
       fillOpacity: 0.7
     })
   },
   onEachFeature(feature, layer){
-    layer.bindPopup("<strong>Average Writting</strong>:" + "</br>" + String(feature.properties.SAT_Math_AvgScore))
+    layer.bindPopup("<h4>" + feature.properties.school_name  + "</h4>" + "<strong>Average Writting</strong>:" + "</br>" + feature.properties.SAT_Writing_AvgScore + "</br>" + "<strong>Number of Test Takers</strong>:" + "</br>" + feature.properties.Num_of_SAT_Test_Takers)
   }
 });
 
