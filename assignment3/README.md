@@ -6,4 +6,4 @@
 
 #### 2) NYC SAT Results (Mapbox with NYC's open data portal)
 
-[NY SAT](index.html)
+[NY SAT](https://cvalenzuela.github.io/Data-and-Digital-Mapping/assignment3/index.html)
