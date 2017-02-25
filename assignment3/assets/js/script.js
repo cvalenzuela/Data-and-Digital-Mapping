@@ -109,7 +109,7 @@ function changeLayer(type){
         map.removeLayer(layer);
       }
     });
-    var math = omnivore.csv('data/schools_latlon.csv', null, SAT_Math_AvgScore ).addTo(map);
+    var math = omnivore.csv('./data/schools_latlon.csv', null, SAT_Math_AvgScore ).addTo(map);
   }
   else if(type === 'reading'){
     map.eachLayer(function (layer) {
@@ -117,7 +117,7 @@ function changeLayer(type){
         map.removeLayer(layer);
       }
     });
-    var reading = omnivore.csv('data/schools_latlon.csv', null, SAT_Critical_Reading_AvgScore ).addTo(map);
+    var reading = omnivore.csv('./data/schools_latlon.csv', null, SAT_Critical_Reading_AvgScore ).addTo(map);
   }
   else if(type === 'writing'){
     map.eachLayer(function (layer) {
@@ -125,7 +125,7 @@ function changeLayer(type){
         map.removeLayer(layer);
       }
     });
-    var writing = omnivore.csv('data/schools_latlon.csv', null, SAT_Writing_AvgScore ).addTo(map);
+    var writing = omnivore.csv('./data/schools_latlon.csv', null, SAT_Writing_AvgScore ).addTo(map);
   }
 
 }
