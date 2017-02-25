@@ -56,7 +56,7 @@ var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
   var div = L.DomUtil.create('div', 'info legend'),
-  grades = [0, 200, 300, 400, 500, 600],
+  grades = [0, 100, 200, 300, 400, 500, 600, 700, 800],
   labels = [];
   div.innerHTML = '<p>Average SAT Results</p>'
   for (var i = 0; i < grades.length; i++) {
