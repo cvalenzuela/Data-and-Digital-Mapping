@@ -22,4 +22,4 @@ And then I tried with Santiago, and got better download time:
 
 - 7-5-1:
 
-![Pansharpening](imgs/bands_432_pan.jpg)
+![Pansharpening](imgs/santiago_bands_751.jpg)
