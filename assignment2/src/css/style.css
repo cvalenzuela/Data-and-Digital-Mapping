@@ -42,7 +42,7 @@ p{
   bottom: 0px;
   text-align: center;
   font-size: 11px;
-  padding: 0 50px;
+  padding: 0 2px;
   color: #5d5d5d;
 }
 a{
@@ -60,7 +60,7 @@ span:after {
   content: "";
   right: 0;
   top: 30%;
-  left: 0;  
+  left: 0;
 }
 
 button{

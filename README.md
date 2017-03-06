@@ -4,4 +4,4 @@ This repo contains work and assignments for the class [Everything is Spatial: Da
 - [Assignment 1: Satellite Alphabet](https://github.com/cvalenzuela/Data-and-Digital-Mapping/tree/master/assignment1)
 - [Assignment 2: Geolocation like?](https://github.com/cvalenzuela/Data-and-Digital-Mapping/tree/master/assignment2)
 - [Assignment 3: QGIS + Mapbox with NYC's open data portal like?](https://github.com/cvalenzuela/Data-and-Digital-Mapping/tree/master/assignment3)
-- [Assignment 4: Landsat like?](https://github.com/cvalenzuela/Data-and-Digital-Mapping/tree/master/assignment4)
+- [Assignment 4: Landsat](https://github.com/cvalenzuela/Data-and-Digital-Mapping/tree/master/assignment4)
