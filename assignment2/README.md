@@ -1,4 +1,4 @@
-# What does studying looks like?
+# Geolocation with Moves App
 
 
 This map visualize almost all of my movements, for 13 days, during my first two weeks for the Spring 2017 term.
