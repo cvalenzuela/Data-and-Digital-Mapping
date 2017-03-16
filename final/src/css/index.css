@@ -1,0 +1,220 @@
+/*
+Main File
+*/
+
+
+
+/*
+Fonts
+*/
+@font-face {
+    font-family: 'heroic-condensed-book';
+    src: url('../fonts/heroic-condensed-book.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'heroic-condensed-regular';
+    src: url('../fonts/heroic-condensed-regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'benton';
+    src: url('../fonts/bentonsans-light-webfont.woff');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'benton-bold';
+    src: url('../fonts/bentonsans-medium-webfont.woff');
+    font-weight: normal;
+}
+
+
+/*
+Tags
+*/
+*{
+  font-family: 'benton', 'Helvetica', sans-serif;
+}
+
+body{
+  background-color: black;
+  overflow: hidden;
+}
+
+h1{
+  font-family: 'heroic-condensed-regular', 'Helvetica', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 8vh;
+  letter-spacing: 15px;
+  animation: in 14s forwards ease-out;
+  text-shadow: 2px 2px #5f5f5f;
+  margin: 10px 0px;
+}
+
+p{
+  color:white;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'benton-bold', 'Helvetica', sans-serif;
+}
+
+ul{
+  padding: 0px 20px;
+  font-size: 13px;
+}
+
+li a{
+  color:black;
+  font-family: 'benton', 'Helvetica', sans-serif;
+}
+
+/*
+ids
+*/
+#map{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  opacity: 1;
+  cursor:grab;
+}
+
+#overlay{
+  background:url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2NkYGD4z8DAwAilGUAAmQNno6iAKUIXBOvGJsgAAPOuCAJ6KVAfAAAAAElFTkSuQmCC
+   ) repeat;
+  position: fixed;
+  opacity: 0.8;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#intro{
+  text-align: center;
+  margin: 27vh auto;
+}
+
+#line{
+  width: 100px;
+  height: 4px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+#intro>p{
+  line-height: 3.2vh;
+  font-size: 16px;
+  max-width: 70%;
+  margin: 8vh auto;
+}
+
+#start:hover a p span{
+  display: none;
+}
+#start:hover a p:after{
+  content: 'Explore [Manhattan, NY] as [Syria]';
+}
+
+#about{
+  position: absolute;
+  right: 0;
+  top: 10vh;
+  width: 100px;
+  text-align: center;
+  z-index: 200;
+  display: none;
+  background:url(
+  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQYV2NkgID/UBpMMUIFYDSKILICuEqYbrAOFG1QGUYAsJ0IAhZ7qPIAAAAASUVORK5CYII=
+  ) repeat;
+}
+
+#description{
+  position: absolute;
+  right: 0;
+  top: 18vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.85);
+  height: 400px;
+  padding: 30px;
+  display: none;
+  z-index: 201;
+}
+
+#description p{
+  color:black;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#description h1{
+  color:black;
+  font-size: 30px;
+  text-shadow: none;
+}
+
+/* classes */
+
+.button{
+  color: white;
+  border: none;
+  padding: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  text-shadow: 1px 2px #000000;
+  font-family: 'benton-bold', 'Helvetica', sans-serif;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2P8////f0ZGRkYGJADmoEvAVSBLoGiDSaAIwowCABuWFAJzz3SVAAAAAElFTkSuQmCC) repeat;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.leaflet-popup-content-wrapper, .map-legends, .map-tooltip {
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.leaflet-container p {
+  font-size: 12px;
+  line-height: 17px;
+  margin: 0 0 10px;
+  color: black;
+  padding: 10px;
+}
+
+.leaflet-container h2 {
+  font-family: 'heroic-condensed-regular', 'Helvetica', sans-serif;
+  font-size: 27px;
+  line-height: 17px;
+  margin: 0 0 0px;
+  color: black;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.leaflet-popup-content img {
+  border-style: none;
+  max-width: 250px;
+  padding: 0px 10px;
+}
+/*
+Animations
+*/
+
+@keyframes in{
+  0%{
+    letter-spacing: 17px;
+  }
+  100%{
+    letter-spacing: 20px;
+  }
+}

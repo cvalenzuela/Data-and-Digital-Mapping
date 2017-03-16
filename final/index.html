@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Degrees of Separation</title>
+  <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet'>
+  <link href="src/css/normalize.css" rel="stylesheet"/>
+  <link href="src/css/index.css" rel="stylesheet"/>
+  <link href="src/css/animate.css" rel="stylesheet"/>
+
+
+
+</head>
+<body>
+  <!-- Map -->
+  <div id="map"></div>
+
+  <!-- Overlay Layer -->
+  <div id="overlay"></div>
+  <div id="intro">
+    <h1>Degres of Separation</h1>
+    <div id="line"></div>
+    <p>What would happend if you look at your city and saw something else? <br /> How does a city look when people need to leave to survive? <br />
+      This is an experiment to explore how we look at spaces, maps and the world around us.</p>
+
+    <div id="start" class="button">
+      <a href="#">
+        <p><span>Explore [40.7128° N, 74.0059° W] as [34.8021° N, 38.9968° E]</span></p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Info -->
+  <div id="about" class="button">
+    <a href="#">
+      <p><span>About</span></p>
+    </a>
+  </div>
+
+  <div id="description">
+    <h1>Degrees of Separation</h1>
+    <p>Why do people flee from a city? How does a city look when people need to leave to survive? This map shows a satellite map of Manhattan and overlays it with satellite images from Kobani in Syria, a city destroyed by wars.  </p>
+    <p>This project aims to explore how we perceive spatial information and maps based on our previous knowledge of a place. Trying to better understand what does it mean to leave your home and seek refugee in another place.</p>
+    <p>Resources:
+      <ul>
+        <li>
+          <a href="https://www.nytimes.com/interactive/2015/02/12/world/middleeast/syria-civil-war-damage-maps.html" target="_blank">From Syria, an Atlas of a Country in Ruins - New York Times</a></p>
+        </li>
+        <li>
+          <a href="https://www.washingtonpost.com/graphics/world/destruction-in-syria/" target="_blank">A bird's-eye view of war-torn Syria - Thw Washington Post</a></p>
+        </li>
+      </ul>
+
+  </div>
+
+  <script src="./build/bundle.min.js"></script>
+
+</body>
+</html>

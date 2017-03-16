@@ -8,7 +8,7 @@
     "build": "NODE_ENV=production webpack",
     "babel": "./node_modules/.bin/babel --presets es2015 src/js/script.jss -o build/bundle.js"
   },
-  "author": "",
+  "author": "Cristóbal Valenzuela",
   "license": "ISC",
   "dependencies": {
     "@mapbox/geojson-coords": "0.0.0",

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Overlaying an image map type</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="./src/leaflet-plugins/leaflet-areaselect.js"></script>
+    <style>
+    html, body { width:100%; height:100%; padding:0; margin:0;}
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+    .leaflet-areaselect-shade {
+      position: absolute;
+      background: rgba(0,0,0, 0.4);
+    }
+    .leaflet-areaselect-handle {
+      position: absolute;
+      background: #fff;
+      border: 1px solid #666;
+      -moz-box-shadow: 1px 1px rgba(0,0,0, 0.2);
+      -webkit-box-shadow: 1px 1px rgba(0,0,0, 0.2);
+      box-shadow: 1px 1px rgba(0,0,0, 0.2);
+      width: 14px;
+      height: 14px;
+      cursor: move;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+    var map = L.map('map', {
+      zoom: 16,
+      center: [ 40.736770853932505,-73.98880004882814,]
+      // zoomControl: false,
+      // trackResize: false,
+      // dragging: false,
+      // zoomAnimation: false,
+      // scrollWheelZoom: false
+    });
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/cvalenzuela/cj0adk64v00072rnovq5jmvpz/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY3ZhbGVuenVlbGEiLCJhIjoiY2l2ZzkweTQ3MDFuODJ5cDM2NmRnaG4wdyJ9.P_0JJXX6sD1oX2D0RQeWFA', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // add AreaSelect with keepAspectRatio:true
+    var areaSelect = L.areaSelect({
+        width:100,
+        height:150,
+    });
+    areaSelect.addTo(map);
+
+    // Read the bouding box
+    var bounds = areaSelect.getBounds();
+
+    // Get a callback when the bounds change
+    areaSelect.on("change", function() {
+      console.log("-----------------------")
+      console.log("North East: ", this.getBounds()._northEast.lat + "," + this.getBounds()._northEast.lng);
+      console.log("South West: ", this.getBounds()._southWest.lat + "," + this.getBounds()._southWest.lng);
+    });
+
+    // Set the dimensions of the box
+    areaSelect.setDimensions({width: 500, height: 500})
+
+    // And to remove it do:
+    //areaSelect.remove();
+
+    </script>
+  </body>
+</html>
