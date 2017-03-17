@@ -5,3 +5,4 @@ This repo contains work and assignments for the class [Everything is Spatial: Da
 - [Assignment 2: Geolocation](https://github.com/cvalenzuela/Data-and-Digital-Mapping/tree/master/assignment2)
 - [Assignment 3: QGIS + Mapbox with NYC's open data portal](https://github.com/cvalenzuela/Data-and-Digital-Mapping/tree/master/assignment3)
 - [Assignment 4: Landsat](https://github.com/cvalenzuela/Data-and-Digital-Mapping/tree/master/assignment4)
+- [Final: Degrees of Separation](https://github.com/cvalenzuela/Data-and-Digital-Mapping/tree/master/final)
