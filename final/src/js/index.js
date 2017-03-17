@@ -13,6 +13,8 @@ let loaded = () =>  {
   let mapa = document.getElementById('map');
   let about = document.getElementById('about');
   let description = document.getElementById('description');
+  let instructions = document.getElementById('instructions');
+  let title = document.getElementById('title');
   let open = true;
 
   start.addEventListener('click', removeIntro);
@@ -23,13 +25,22 @@ function removeIntro(){
   let map = document.getElementById('map');
   intro.className = "animated fadeOutDown";
   overlay.className = "animated fadeOutDown";
+
   setTimeout(function(){
     map.style.zIndex = "100";
   },0)
+
   setTimeout(function(){
-    about.className = "animated fadeIn";
+    about.className = "animated fadeInRight";
     about.style.display = "inline-block";
+    instructions.className = "animated fadeInRight";
+    instructions.style.display = "inline-block";
   },1000)
+
+  setTimeout(function(){
+    title.className = "animated fadeIn";
+    title.style.display = "inline-block";
+  },1500)
 
   // Add the images
   images();
@@ -39,13 +50,15 @@ function removeIntro(){
 function showAbout(){
 
   if(open){
-    console.log("open", open)
     description.className = "animated fadeIn";
     description.style.display = "inline-block";
   }
   else{
-    console.log("close", open)
     description.className = "animated fadeOut";
+    setTimeout(function(){
+      description.style.display = "none";
+    },500)
+
   }
 
   open = !open;

@@ -10,10 +10,10 @@ import sources from './sources';
 export default function() {
 
   for (let i = 1; i <= Object.keys(sources).length; i++){
-    let image = './src/imgs/'+ i +'.png',
+    let image = './src/imgs/mask/' + i + '.png',
         imageBound = sources['image' + i].latlng;
 
-    let icon = './src/imgs/vectors/3.png',
+    let icon = './src/imgs/vectors/' + i + '.png',
         iconBound = sources['image' + i].latlng
 
     let imageOverlay = L.imageOverlay(image, imageBound, {
@@ -31,7 +31,7 @@ export default function() {
 }
 
 function imageInfo(e){
-  let number = e.target._url.substring(11,12)
+  let number = e.target._url.substring(16,17)
   L.popup().setLatLng(e.latlng)
   .setContent(sources['image'+number].title + sources['image'+number].description + sources['image'+number].img)
   .openOn(map);

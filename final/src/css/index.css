@@ -140,28 +140,79 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2
   ) repeat;
 }
 
+#about a p{
+  margin: 10px 0px;
+}
+
+#about a p span{
+  font-size: 14px;
+}
+
 #description{
   position: absolute;
   right: 0;
   top: 18vh;
   width: 300px;
   background-color: rgba(255, 255, 255, 0.85);
-  height: 400px;
+  height: 360px;
   padding: 30px;
   display: none;
   z-index: 201;
 }
 
 #description p{
-  color:black;
-  font-size: 13px;
-  line-height: 18px;
+  color: black;
+  font-size: 12px;
+  margin: 7px 0px 5px 0px;
+  padding: 0;
+  line-height: 14px;
 }
 
 #description h1{
   color:black;
   font-size: 30px;
   text-shadow: none;
+}
+
+#instructions{
+  position: absolute;
+  bottom: 25px;
+  right: 0px;
+  background-color: rgba(255, 255, 255, 0.85);
+  opacity: 0.8;
+  padding: 0px 10px;
+  text-align: center;
+  display: none;
+  z-index: 204;
+}
+
+#instructions p{
+  color: black;
+  font-size: 12px;
+  margin: 7px 0px 5px 0px;
+  padding: 0;
+}
+
+#instructions img{
+  max-width: 50px;
+  text-align: center;
+}
+
+#title{
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  text-align: right;
+  display: none;
+  z-index: 206;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQYV2NkgID/UBpMMUIFYDSKILICuEqYbrAOFG1QGUYAsJ0IAhZ7qPIAAAAASUVORK5CYII=) repeat;
+  padding: 0 10px;
+}
+
+#title h1{
+  font-size: 20px;
+  letter-spacing: 10px;
+  animation: none;
 }
 
 /* classes */
@@ -186,9 +237,9 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2
 .leaflet-container p {
   font-size: 12px;
   line-height: 17px;
-  margin: 0 0 10px;
+  margin: 0 0 0px;
   color: black;
-  padding: 10px;
+  padding: 0px 10px;
 }
 
 .leaflet-container h2 {
@@ -201,10 +252,23 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2
   text-transform: uppercase;
 }
 
+.leaflet-container h5 {
+  font-family: 'heroic-condensed-regular', 'Helvetica', sans-serif;
+  font-size: 14px;
+  margin: 0 0 0px;
+  color: #424242;
+  padding: 10px;
+}
+
 .leaflet-popup-content img {
   border-style: none;
   max-width: 250px;
   padding: 0px 10px;
+}
+
+
+.leaflet-touch .leaflet-bar {
+  background: rgba(255, 255, 255, 0.37);
 }
 /*
 Animations

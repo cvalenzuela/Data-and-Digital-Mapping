@@ -9,7 +9,7 @@ mybounds = L.latLngBounds(southWest, northEast);
 
 export var map = L.map('map', {
   zoom: 17,
-  center: [40.742365, -73.988259],
+  center: [40.716403, -74.005452],
   // zoomControl: false,
   // trackResize: false,
   // dragging: false,
