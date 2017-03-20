@@ -16,7 +16,6 @@ This project aims to explore how we perceive spatial information and maps based 
 Run Local:
 ```
 webpack-dev-server
-
 ```
 
 Build:
