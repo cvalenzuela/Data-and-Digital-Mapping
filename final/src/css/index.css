@@ -176,8 +176,8 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2
 
 #instructions{
   position: absolute;
-  bottom: 25px;
-  right: 0px;
+  bottom: 70px;
+  left: 0px;
   background-color: rgba(255, 255, 255, 0.85);
   opacity: 0.8;
   padding: 0px 10px;
@@ -186,11 +186,48 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2
   z-index: 204;
 }
 
+#zoomout{
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.85);
+  opacity: 0.8;
+  padding: 0px 10px;
+  text-align: center;
+  display: none;
+  z-index: 209;
+}
+
+#zoomout p{
+  font-size: 12px;
+  color: white;
+  margin: 6px;
+  background: rgba(0, 0, 0, 0.52);
+  padding: 3px;
+  cursor: pointer;
+}
+
+#instructions p b{
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.93);
+  background: rgba(0, 0, 0, 0.52);
+  padding: 1px;
+  cursor: pointer;
+}
+
+#next p{
+  color: black;
+  font-size: 12px;
+  margin: 7px 0px 5px 0px;
+  padding: 0;
+}
+
 #instructions p{
   color: black;
   font-size: 12px;
   margin: 7px 0px 5px 0px;
   padding: 0;
+  line-height: 17px;
 }
 
 #instructions img{

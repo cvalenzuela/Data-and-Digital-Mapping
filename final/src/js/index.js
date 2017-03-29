@@ -4,6 +4,7 @@
 
 import map from './map'
 import images from './images'
+import moveMap from './move'
 
 // When DOM ready
 let loaded = () =>  {
@@ -14,11 +15,14 @@ let loaded = () =>  {
   let about = document.getElementById('about');
   let description = document.getElementById('description');
   let instructions = document.getElementById('instructions');
+  let zoomout = document.getElementById('zoomout');
+  let move = document.getElementById('move');
   let title = document.getElementById('title');
   let open = true;
 
   start.addEventListener('click', removeIntro);
   about.addEventListener('click', showAbout);
+  move.addEventListener('click', moveMap);
 }
 
 function removeIntro(){
@@ -33,7 +37,7 @@ function removeIntro(){
   setTimeout(function(){
     about.className = "animated fadeInRight";
     about.style.display = "inline-block";
-    instructions.className = "animated fadeInRight";
+    instructions.className = "animated fadeInLeft";
     instructions.style.display = "inline-block";
   },1000)
 
@@ -44,6 +48,10 @@ function removeIntro(){
 
   // Add the images
   images();
+
+  // Once all points are clicked, show the zoom out
+  // zoomout.className = "animated fadeInLeft";
+  // zoomout.style.display = "inline-block";
 
 }
 
