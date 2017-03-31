@@ -49,10 +49,6 @@ function removeIntro(){
   // Add the images
   images();
 
-  // Once all points are clicked, show the zoom out
-  // zoomout.className = "animated fadeInLeft";
-  // zoomout.style.display = "inline-block";
-
 }
 
 function showAbout(){

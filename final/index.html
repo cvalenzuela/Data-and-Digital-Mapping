@@ -10,7 +10,21 @@
   <link href="src/css/index.css" rel="stylesheet"/>
   <link href="src/css/animate.css" rel="stylesheet"/>
 
+  <meta name="description" content="Degrees of Separation. What would happend if you look at your city and saw something else? This is an experiment to explore how we look at spaces, maps and the world around us.">
+  <meta name="author" content="Cristóbal Valenzuela Barrera">
+  <meta property="og:title" content="Degrees of Separation">
+  <meta property="og:description" content="Degrees of Separation. What would happend if you look at your city and saw something else? This is an experiment to explore how we look at spaces, maps and the world around us.">
 
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58925118-11', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 
 </head>
 <body>
@@ -64,10 +78,10 @@
   </div>
 
   <div id="instructions">
-    <p>Move around or <br />
-      <b id="move">move me </b>to the <br />
-      next point <span id="amount">(0/7)</span> <br />
-      and click</p><img src="./src/imgs/vectors/base.png" />
+    <p>Move Around <img id="drag" src="src/imgs/cursor.png" /> or<br />
+    Click<b id="move">Next</b> <span id="amount">(0/7)</span>. <br />
+  </p><img src="./src/imgs/vectors/base.png" style="float:left"/>
+    <p style="margin: 2px 0px 10px 0px;width: 120px;">Click the circles on the map.</p>
   </div>
 
   <div id="zoomout">

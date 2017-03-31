@@ -210,7 +210,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2
 #instructions p b{
   font-weight: bold;
   color: rgba(255, 255, 255, 0.93);
-  background: rgba(0, 0, 0, 0.52);
+  background: rgba(68, 140, 75, 0.4);
   padding: 1px;
   cursor: pointer;
 }
@@ -228,6 +228,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2
   margin: 7px 0px 5px 0px;
   padding: 0;
   line-height: 17px;
+  letter-spacing: 0.3px;
 }
 
 #instructions img{
@@ -250,6 +251,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2
   font-size: 20px;
   letter-spacing: 10px;
   animation: none;
+}
+
+#drag{
+  width: 13px !important;
 }
 
 /* classes */
@@ -307,6 +312,9 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2
 .leaflet-touch .leaflet-bar {
   background: rgba(255, 255, 255, 0.37);
 }
+
+
+
 /*
 Animations
 */

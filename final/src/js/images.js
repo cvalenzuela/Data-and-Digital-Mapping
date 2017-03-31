@@ -2,8 +2,6 @@
 // Image layers
 //====================
 
-
-
 import { map } from './map'
 import sources from './sources';
 
@@ -21,9 +19,12 @@ export default function() {
       opacity: 0
     });
 
-    L.imageOverlay(icon, iconBound, {
+    let iconOverlay = L.imageOverlay(icon, iconBound, {
       opacity: 0.8
     }).addTo(map);
+
+
+    iconOverlay.getElement().className += ' iconFade'
 
     imageOverlay.on('click', imageInfo);
     imageOverlay.addTo(map);
