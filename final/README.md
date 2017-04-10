@@ -9,7 +9,7 @@ This project aims to explore how we perceive spatial information and maps based 
 
 ### Live
 
-[Degrees of Separation](https://cvalenzuela.github.io/Data-and-Digital-Mapping/final/index.html)
+[Degrees of Separation](http://degreesofseparation.cvalenzuelab.com/)
 
 ### Development
 
